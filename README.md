@@ -7,7 +7,7 @@ This project focuses on computing and visualizing the curvature properties of va
 ## 🧠 Objectives
 
 - Implement mathematical representations of selected 3D surfaces.
-- Calculate differential geometric properties: first and second fundamental forms, Gaussian curvature (K), mean curvature (H), and principal curvatures (k₁, k₂).
+- Calculate differential geometric properties: first and second fundamental forms, Gaussian curvature $(K)$, mean curvature $(H)$, and principal curvatures $(k_{1}$,$ k_{2})$.
 - Visualize surfaces with curvature-based color mappings.
 - Analyze curvature distributions across different surface types.
 - Ensure modularity and reusability of code components.
@@ -16,17 +16,20 @@ This project focuses on computing and visualizing the curvature properties of va
 
 ```
 3D-Curvature-Analysis/
-├── data/                   # Auxiliary data (meshes, samples)
-├── docs/                   # Project documentation
-├── results/                # Generated outputs (images, graphs, files)
-├── src/                    # Source code
-│   ├── geometry/           # Mathematical functions (curvatures, parametrizations)
-│   ├── utils/              # Auxiliary utilities (exports, transformations)
-│   └── visualization/      # Graph and figure generation
-├── tests/                  # Test scripts for implemented functions
-├── main.py                 # Main execution script
-├── requirements.txt        # Project dependencies
-└── README.md               # Project description
+├── data/                 
+├── docs/                   
+├── results/                
+├── src/                    
+│   ├── geometry/           
+│   │   ├── differential_geometry/
+│   │   └── surfaces/
+│   ├── utils/              
+│   └── visualization/      
+├── tests/     
+├── LICENSE         
+├── main.py                 
+├── requirements.txt        
+└── README.md             
 ```
 
 ## 🔍 Selected Surfaces
@@ -34,24 +37,22 @@ This project focuses on computing and visualizing the curvature properties of va
 The project analyzes the following surfaces, chosen to represent a wide range of curvature characteristics:
 
 1. **Sphere**: Constant positive Gaussian curvature.
-2. **Cylinder**: Zero Gaussian curvature; non-zero mean curvature.
-3. **Elliptic Paraboloid**: Positive Gaussian curvature varying across the surface.
-4. **Hyperbolic Paraboloid**: Negative Gaussian curvature throughout.
-5. **Torus**: Regions with positive, negative, and zero Gaussian curvature.
-6. **Catenoid**: Minimal surface with zero mean curvature.
-7. **Helicoid**: Another minimal surface with zero mean curvature.
-8. **Ellipsoid**: Varying positive Gaussian curvature depending on direction.
-9. **Hyperboloid of One Sheet**: Negative Gaussian curvature; ruled surface.
+2. **Elliptic Paraboloid**: Positive Gaussian curvature varying across the surface.
+3. **Hyperbolic Paraboloid**: Negative Gaussian curvature throughout.
+4. **Torus**: Regions with positive, negative, and zero Gaussian curvature.
+5. **Enneper**: A minimal surface with self-intersecting properties, showcasing zero mean curvature and intricate geometry.
+6. **Helicoid**: Another minimal surface with zero mean curvature.
 
 ## 🧮 Mathematical Foundations
 
 For each surface, the following computations are performed:
 
-- **First Fundamental Form**: Coefficients E, F, G derived from partial derivatives of the parametrization.
-- **Second Fundamental Form**: Coefficients e, f, g obtained using the surface normal and second-order partial derivatives.
-- **Gaussian Curvature (K)**: Calculated as \( K = \frac{eg - f^2}{EG - F^2} \).
-- **Mean Curvature (H)**: Calculated as \( H = \frac{1}{2} \cdot \frac{eG - 2fF + gE}{EG - F^2} \).
-- **Principal Curvatures (k₁, k₂)**: Eigenvalues of the shape operator derived from the fundamental forms.
+- **First Fundamental Form**: The coefficients $ E $, $ F $, and $ G $ are derived from the dot products of the partial derivatives of the surface parametrization.
+- **Second Fundamental Form**: The coefficients $ e $, $ f $, and $ g $ are computed using the surface normal vector and the second-order partial derivatives of the parametrization.
+- **Normal Curvatures**: Curvatures in the direction of a given tangent vector, derived from the fundamental forms.
+- **Gaussian Curvature ($K$)**: Defined as $K = \frac{eg - f^2}{EG - F^2}$, representing the intrinsic curvature of the surface.
+- **Mean Curvature ($H$)**: Defined as $H = \frac{1}{2} \cdot \frac{eG - 2fF + gE}{EG - F^2}$, representing the average of the principal curvatures.
+- **Principal Curvatures ($k_{1}$, $k_{2}$)**: The eigenvalues of the shape operator, derived from the fundamental forms, representing the maximum and minimum normal curvatures at a point.
 
 ## 📊 Visualization
 
@@ -107,6 +108,7 @@ This will generate visualizations and save them in the `results/` directory.
 - do Carmo, M. P. (1976). *Differential Geometry of Curves and Surfaces*. Prentice-Hall.
 - Pressley, A. (2010). *Elementary Differential Geometry*. Springer.
 - O'Neill, B. (2006). *Elementary Differential Geometry*. Academic Press.
+- Gray, A. (1998). *Modern Differential Geometry of Curves and Surfaces with Mathematica*. CRC Press.
 
 ## 📝 License
 
