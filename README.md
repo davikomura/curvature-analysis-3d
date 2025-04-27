@@ -7,7 +7,7 @@ This project focuses on computing and visualizing the curvature properties of va
 ## 🧠 Objectives
 
 - Implement mathematical representations of selected 3D surfaces.
-- Calculate differential geometric properties: first and second fundamental forms, Gaussian curvature $(K)$, mean curvature $(H)$, and principal curvatures $(k_{1}$,$ k_{2})$.
+- Calculate differential geometric properties: first and second fundamental forms, Gaussian curvature $(K)$, mean curvature $(H)$, and principal curvatures $(k_{1}, k_{2})$.
 - Visualize surfaces with curvature-based color mappings.
 - Analyze curvature distributions across different surface types.
 - Ensure modularity and reusability of code components.
