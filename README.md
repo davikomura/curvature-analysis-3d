@@ -15,15 +15,13 @@ This project focuses on computing and visualizing the curvature properties of va
 ## 📁 Project Structure
 
 ```
-3D-Curvature-Analysis/                
-├── docs/                                  
+3D-Curvature-Analysis/         
 ├── src/      
 │   ├── examples/              
 │   ├── geometry/           
 │   │   ├── differential_geometry/
 │   │   └── surfaces/              
-│   └── visualization/      
-├── tests/              
+│   └── visualization/                  
 ├── LICENSE 
 ├── main.py                
 ├── README.md       
@@ -73,21 +71,13 @@ The following types of visualizations are generated:
 
 These visualizations serve as a powerful tool for exploring and analyzing the geometric properties of 3D surfaces, making complex curvature concepts more accessible and comprehensible.
 
-## 🧪 Testing
-
-The `tests/` directory contains scripts to validate:
-
-- Accuracy of curvature computations against known analytical results.
-- Consistency of normal vector calculations.
-- Correctness of fundamental form implementations.
-
 ## 🛠️ Installation
 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/3D-Curvature-Analysis.git
-   cd 3D-Curvature-Analysis
+   git clone https://github.com/yourusername/curvature-analysis-3d.git
+   cd curvature-analysis-3d
    ```
 
 2. **Create a virtual environment** (optional but recommended):
@@ -110,8 +100,6 @@ Run the main script to perform curvature analysis:
 ```bash
 python main.py
 ```
-
-This will generate visualizations and save them in the `results/` directory.
 
 ## 📚 References
 
