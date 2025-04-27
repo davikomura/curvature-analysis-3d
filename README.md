@@ -19,17 +19,17 @@ This project focuses on computing and visualizing the curvature properties of va
 ├── data/                 
 ├── docs/                   
 ├── results/                
-├── src/                    
+├── src/      
+│   ├── examples/              
 │   ├── geometry/           
 │   │   ├── differential_geometry/
-│   │   └── surfaces/
-│   ├── utils/              
+│   │   └── surfaces/              
 │   └── visualization/      
-├── tests/     
-├── LICENSE         
-├── main.py                 
-├── requirements.txt        
-└── README.md             
+├── tests/              
+├── LICENSE 
+├── main.py                
+├── README.md       
+└── requirements.txt             
 ```
 
 ## 🔍 Selected Surfaces
@@ -56,12 +56,24 @@ For each surface, the following computations are performed:
 
 ## 📊 Visualization
 
-Utilizing Matplotlib's 3D plotting capabilities, the project visualizes:
+The project employs advanced 3D plotting techniques to visualize curvature properties of surfaces. The visualizations are designed to provide an intuitive understanding of curvature distributions across various surface types.
 
-- Surfaces colored based on Gaussian curvature values.
-- Surfaces colored based on mean curvature values.
-- Vector fields representing surface normals.
-- Optional: Principal curvature directions and magnitudes.
+### Visualization Features
+
+- **Curvature-Based Coloring**: Surfaces are colored according to curvature values, with a customizable colormap to highlight variations effectively.
+- **Edge Highlighting**: Surface edges are outlined to enhance visual clarity and structure.
+- **Interactive Colorbar**: A colorbar is included to represent the range of curvature values, aiding in quantitative analysis.
+- **Axes and Titles**: Each visualization includes labeled axes and descriptive titles for better interpretability.
+
+### Visualization Outputs
+
+The following types of visualizations are generated:
+
+1. **Gaussian Curvature Mapping**: Displays the intrinsic curvature of surfaces, highlighting regions of positive, negative, or zero curvature.
+2. **Mean Curvature Mapping**: Illustrates the average curvature, providing insights into surface bending behavior.
+3. **Principal Curvature Directions**: Optionally visualizes the directions and magnitudes of principal curvatures for a deeper geometric analysis.
+
+These visualizations serve as a powerful tool for exploring and analyzing the geometric properties of 3D surfaces, making complex curvature concepts more accessible and comprehensible.
 
 ## 🧪 Testing
 
