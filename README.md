@@ -15,10 +15,8 @@ This project focuses on computing and visualizing the curvature properties of va
 ## 📁 Project Structure
 
 ```
-3D-Curvature-Analysis/
-├── data/                 
-├── docs/                   
-├── results/                
+3D-Curvature-Analysis/                
+├── docs/                                  
 ├── src/      
 │   ├── examples/              
 │   ├── geometry/           

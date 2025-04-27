@@ -3,7 +3,6 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-import numpy as np
 from geometry.surfaces.sphere import parametrize_sphere
 from geometry.differential_geometry.first_fundamental_form import compute_first_fundamental_form
 from geometry.differential_geometry.second_fundamental_form import compute_second_fundamental_form

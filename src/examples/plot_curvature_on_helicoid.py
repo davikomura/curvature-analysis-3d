@@ -1,4 +1,8 @@
-import numpy as np
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from geometry.surfaces.helicoid import parametrize_helicoid
 from geometry.differential_geometry.first_fundamental_form import compute_first_fundamental_form
 from geometry.differential_geometry.second_fundamental_form import compute_second_fundamental_form

@@ -21,7 +21,7 @@ def compute_principal_curvatures(H, K):
     k2 = H - discriminant
     return k1, k2
 
-def compute_normal_curvature(E, F, G, L, M, N, a, b):
+def compute_normal_curvature(E, F, G, L, M, N, a=1, b=1):
 
     numerator = L * a**2 + 2 * M * a * b + N * b**2
     denominator = E * a**2 + 2 * F * a * b + G * b**2
